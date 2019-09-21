@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan 9b</title>
+</head>
+<body>
+	<h1>Pilih Link</h1>
+	<form>
+		<select name="myLink" id="myLink" onchange="pilihLink()">
+				<option value="">pilih Link</option>
+				<option value="http://google.com">Google.con</option>
+				<option value="http://teknik.unpas.ac.id">website teknik unpas</option>
+				<option value="http://facebook.com">Facebook</option>
+				<option value="http://youtube.com">Youtube</option>
+		</select>
+	</form>
+	<script>
+		function pilihLink (){
+		var linkTerpilih = document.getElementById('myLink').value;if(linkTerpilih==""){
+			alert ("Masukan Lokasi yang akan anda pilih");
+		}else {
+			document.location.href = linkTerpilih;
+		}
+	}
+		
+		
+
+
+	</script>
+
+</body>
+</html>

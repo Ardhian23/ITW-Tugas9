@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan 9a</title>
+</head>
+<body>
+	<h3>Masukkan Tulisan</h3>
+	<input type="text" id="tulisanKu"/>
+	<input type="button" value="cek" onclick="cekTulisan()"/>
+
+	<script>
+		function cekTulisan(){
+			var tulisanKu = document.getElementById('tulisanKu').value;
+		if (tulisanKu ==""){
+			alert ("Anda Tidak Memasukan nama");
+		}else {
+			alert("teks yang anda masukan adalah:"+ tulisanKu);
+		}
+	}
+	</script>
+</body>
+</html>
